@@ -59,4 +59,38 @@ body {
     text-decoration: underline;
 }
 
+
+@media (max-width: 700px) {
+
+    #header {
+        /* height: 15%; */
+        flex-direction: column;
+    }
+
+    #header #logo {
+        text-align: center;
+    }
+
+    #header #nav-bar {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #header #nav-bar #nav-ul .nav-li{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 250px) {
+    
+    #header #nav-bar #nav-ul {
+        flex-direction: column;
+    }
+
+    #header #nav-bar #nav-ul .nav-li {
+        width: 100%;
+    }
+
+    
+}
             
