@@ -5,6 +5,9 @@
     --secondary-color: #333;
     --tertiary-color: #0aaeef;
     --primary-font: 'Roboto', sans-serif;
+    --h2-font-size: 3em;
+    --h3-font-size: 1.5em;
+    --p-font-size: 1.1em;
 }
 
 * {
@@ -19,9 +22,15 @@ body {
     background-color: var(--primary-color);
 }
 
+#container {
+    position: relative;
+}
+
+/* Header */
+
 #header {
     display: flex;
-    position: fixed;
+    position: sticky;
     width: 100%;
     justify-content: space-between;
     padding: 1% 5%;
@@ -44,7 +53,7 @@ body {
 #header #nav-bar #nav-ul .nav-li {
     display: flex;
     justify-content: flex-end;
-    align-content: center;
+    align-items: center;
     width: 30%;
     list-style: none;
 }
@@ -93,4 +102,55 @@ body {
 
     
 }
-            
+
+
+/* Banner */
+         
+#banner {
+    display: flex;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    margin: 2% 0 0 0;
+    padding: 5% 1% 5% 1%;
+}
+
+#banner-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 50%;
+}
+
+#banner-text .section-heading {
+    font-size: var(--h2-font-size);
+}
+
+#banner-text .section-sub-heading {
+    font-size: var(--h3-font-size);
+    padding-bottom: 1%;
+}
+
+#banner-text .section-p {
+    text-align: justify;
+    font-size: var(--p-font-size);
+}
+
+#banner-email {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+#banner-email #form-description {
+    width: 60%;
+}
+
+#banner-email #form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+}
