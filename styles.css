@@ -351,7 +351,7 @@ body {
 }
 
 #pricing .inner-container #plans .plan .plan-info {
-    height: 50vh;
+    min-height: 50vh;
 }
 
 #pricing .inner-container #plans .plan p.price {
@@ -380,6 +380,32 @@ body {
     color: var(--primary-color);
     text-align: center;    
     font-size: 1em;
+}
+
+@media (max-width: 750px) {
+    #pricing .inner-container #plans {
+        justify-content: space-between;
+    }
+
+    #pricing .inner-container #plans .plan {
+        width: 45%; 
+        margin: 5% 0;
+    }
+    
+    
+}
+
+@media (max-width: 600px) {
+    #pricing .inner-container #plans .plan {
+        width: 80%;
+        margin: 5% auto;
+    }
+}
+
+@media (max-width: 300px) {
+    #pricing .inner-container #plans .plan ul {
+        margin-left: 2%;
+    }
 }
 
 
