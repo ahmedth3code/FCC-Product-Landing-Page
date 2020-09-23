@@ -408,27 +408,11 @@ body {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (max-width: 250px) {
+    #pricing .inner-container #plans .plan ul {
+        list-style: none;
+    }   
+}
 
 
 /* Technology */
@@ -440,18 +424,85 @@ body {
 
 }
 
-#technology .inner-container {
+#technology .inner-container #video-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     width: 100%;
-    max-width: 1080px;
-    margin: auto;
+    margin: 2% 0;
 }
 
-#technology #video-container {
-    width: 60%;
-    margin: 2% auto;    
+#technology .inner-container #video-container #video-text {
+    color: var(--secondary-color);
+    width: 40%;
 }
 
-#technology #video-container #video {
+#technology .inner-container #video-container #video {
+    width: 50%;
+    height: 315px;
+}
+
+@media (max-width: 750px) {
+    #technology .inner-container #video-container #video-text,
+    #technology .inner-container #video-container #video {
+        width: 100%;
+        margin-top: 3%;
+    }
+}
+
+/* Footer */
+
+#footer {
+    width: 100%;
+    background-color: var(--secondary-color);
+}
+
+#footer .inner-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+    margin-bottom: 0;
+}
+
+#footer .inner-container #copyright-info {
+    width: 40%;
+}
+
+#footer .inner-container #copyright-info #copyright {
+    color: var(--primary-color);
+}
+
+#footer .inner-container #other-links {
+    text-align: right;
+    width: 40%;
+}
+
+#footer .inner-container #other-links .other-link {
     display: inline-block;
-    margin: auto;
+    color: var(--primary-color);
+    text-decoration: none;
+    margin: 0 1%;
+}
+
+@media (max-width: 600px) {
+
+    #footer .inner-container {
+        flex-direction: column;
+    }
+
+    #footer .inner-container #copyright-info,
+    #footer .inner-container #other-links {
+        text-align: center;
+        width: 100%;
+    }    
+}
+
+@media (max-width: 300px) {
+
+    #footer .inner-container #other-links {
+        display: flex;
+        flex-direction: column;
+    }  
+
 }
